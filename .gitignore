@@ -10,5 +10,6 @@ venv
 #Output images in root (examples are not ignored)
 /*.png
 
+img
 out
 out/*
