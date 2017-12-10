@@ -5,6 +5,7 @@ import sorting
 
 
 def read_output_image_path():
+    # print("ESTOU AQUI: " + __args.output)
     return __args.output if __args.output else util.id_generator() + ".png"
 
 
@@ -69,3 +70,7 @@ if __args.int_function == "threshold":
 if __args.int_function in ["random", "waves"]:
     print("Characteristic length: ", __args.clength)
 print("Randomness: ", __args.randomness, "%")
+
+
+print (read_output_image_path())
+

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 try:
     import Image
 except ImportError:
@@ -47,7 +49,10 @@ def main():
         output_img = util.crop_to(output_img, Image.open(argparams.image_input_path))
 
     print("Saving image...")
-    output_img.save(argparams.output_image_path)
+
+    print (argparams.output_image_path.split(".")[-1])
+
+    output_img.save(argparams.output_image_path + "/" + util.id_generator() + ".png")
 
     print("Done!", argparams.output_image_path)
 
