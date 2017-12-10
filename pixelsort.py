@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 try:
     import Image
@@ -49,12 +49,11 @@ def main():
         output_img = util.crop_to(output_img, Image.open(argparams.image_input_path))
 
     print("Saving image...")
-
+    #output_img.save(argparams.output_image_path)
     print (argparams.output_image_path.split(".")[-1])
-
     output_img.save(argparams.output_image_path + "/" + util.id_generator() + ".png")
 
-    print("Done!", argparams.output_image_path)
+    print("Done! ", argparams.output_image_path)
 
 
 if __name__ == "__main__":

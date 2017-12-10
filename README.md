@@ -84,10 +84,10 @@ Sorting function    | Description
 
 ![file](/examples/file.png)
 
-### todo
-
-* Allow defining different intervals for different channels.
-
 ---
 
 Based on https://gist.github.com/LycaonIsAWolf/667c5554e5d9d9a25ae6
+
+(Adapted from [CasperKonig](https://github.com/CasperKoning/pixelsort))
+
+----

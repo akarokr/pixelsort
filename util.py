@@ -11,10 +11,6 @@ def lightness(pixel):
     return rgb_to_hsv(pixel[0], pixel[1], pixel[2])[2] / 255.0  # For backwards compatibility with python2
 
 
-def hue(pixel):
-    return rgb_to_hsv(pixel[0], pixel[1], pixel[2])[0] / 255.0
-
-
 def random_width(clength):
     x = random.random()
     width = int(clength * (1 - x))
@@ -37,4 +33,4 @@ def crop_to(image_to_crop, reference_image):
     upper = dy / 2
     right = dx / 2 + reference_size[0]
     lower = dy / 2 + reference_size[1]
-    return image_to_crop.crop(box=(int(left), int(upper), int(right), int(lower)))
+    return image_to_crop.crop(box=(left, upper, right, lower))
